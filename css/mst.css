@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px; /* Adjust padding for spacing */
+    background-color: #ff8565;
+}
+
+nav {
+    flex: 1;
+    text-align: center; /* Center align the navigation */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center; /* Center align the list items */
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+    position: relative; /* Add this line */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+nav ul li .cart {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li .cart i {
+    margin-right: 5px;
+}
+
+.cart {
+    margin-left: auto; /* Move the cart to the far right */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+.logo img {
+    margin: 0;
+    padding: 5px;
+}
+
+svg {
+    width: 30px;
+    padding: auto;
+    align-items: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #953e19a1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+svg:hover{
+    color: white;
+    transform: scale(0.2);
+    cursor: pointer;
+}
+
+/* Produtcs */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.men {
+    position: relative;
+    border: 1px solid #bfbfbf;
+    width: calc(30% - 20px);
+    box-shadow: 10px 10px 5px #aaaaaa;
+    padding: 10px;
+    transition: transform 0.2s;
+}
+
+.men img {
+    width: 200px;  /* Set the width you want */
+    height: 200px;  /* Set the height you want */
+    margin: 0 auto 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+.men h3 {
+    font-size: 1.2em;
+    margin: 0 0 10px;
+    text-align: center;
+}
+
+.men .rating {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.men .rating span {
+    font-size: 1.3em;
+    color: gold;
+}
+
+.men p {
+    margin: 0 0 10px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.pd {
+    background-color: hsla(12, 44%, 23%, 0.11);
+    border-radius: 10px;
+    padding: 10px;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+    border: 0;
+    transition: transform 0.2s;
+}
+
+.pd:hover {
+    transform: scale(1.2);
+}
+
+.men:hover {
+    transform: scale(0.9);
+}
+
+.price {
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-left: 5px;
+}
+
+.wishlist {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;
+    color: #ff5a5f;
+    cursor: pointer;
+}
+
+.wishlist:hover {
+    color: #ff1a1f;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .men {
+        width: calc(45% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .men {
+        width: calc(100% - 20px);
+    }
+}
+
+
+

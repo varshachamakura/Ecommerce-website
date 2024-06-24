@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
+}
+
+body {
+    padding: 20px;
+    background-image: url(../images/background.jpg); /* Path to your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.shop {
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.men, .women, .kids {
+    border: 1px solid #ccc;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow for each section */
+    transition: transform 0.2s ease-in-out; /* Smooth transition on hover */
+}
+
+.men:hover, .women:hover, .kids:hover {
+    transform: translateY(-5px); /* Lift sections up on hover */
+}
+
+.men img, .women img, .kids img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+    max-height: 70%; /* Limit image height to maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for images */
+    transition: transform 0.2s ease-in-out; /* Smooth transition on hover */
+}
+
+.men h1, .women h1, .kids h1 {
+    margin-top: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: #f0f0f0;
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    margin-top: 10px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out; /* Smooth transition on hover */
+}
+
+a:hover {
+    cursor: pointer;
+    transform: scale(1.1); /* Scale links slightly on hover */
+}
